@@ -1,5 +1,5 @@
 layout: page
 title: "TEST PAGE"
-permalink: http://dean-krueger.github.io/test
+permalink: https://dean-krueger.github.io/test
 
 This page is a test?
