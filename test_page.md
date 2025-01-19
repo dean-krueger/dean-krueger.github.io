@@ -1,5 +1,7 @@
+---
 layout: page
 title: "TEST PAGE"
-permalink: /test
+permalink: /test/
+---
 
 This page is a test?
