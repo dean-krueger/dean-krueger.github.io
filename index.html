@@ -3,24 +3,76 @@
 
 <head>
     <title>Home | Dean Krueger</title>
+    <link href="./css/styles.css" rel="stylesheet">
 </head>
 
+
 <body>
-    <h1>Dean Krueger</h1>
+    <div id="banner">
+      <!--<div class="content">
+            <h1>Dean Krueger</h1>
+        </div>-->
+    </div>
+    <header id="header">
+        <div class="container">
+            <nav class="navigation">
+                <div class="content">
+                    <ul class="menu">
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li class="menu-item-expanded">INTERESTS
+                            <ul class="menu">
+                                <li class="menu-item-expanded"><a href="./pages/nuclear_engineering.html">Nuclear Engineering</a></li>
+                                <li class="menu-item-expanded"><a href="./pages/energy_policy.html">Energy Policy</a></li>
+                                <li class="menu-item-expanded"><a href="./pages/space_exploration.html">Space Exploration</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-expanded">RESEARCH PROJECTS
+                            <ul class="menu">
+                                <li class="menu-item-expanded"><a href="https://github.com/uw-reti/tricycle">Tricycle</a></li>
+                                <li class="menu-item-expanded"><a href="https://github.com/cyclus/cyclus">Cyclus</a></li>
+                            </ul>
+                        </li>
+                        <li>CV</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
     <p>
         This is a test Paragraph. Write a brief introduction to the website and
         some stuff like that, idk. This is mostly to see if this will display
         correctly.
     </p>
     <div id="Interests">
-        <h2>Interests</h2>
-        <p>
-            A little bit about my interests
-        </p>
         <ul>
-            <li><a href="./interests/nuclear_engineering.html" target="_blank">Nuclear Engineering</a></li>
-            <li><a href="./interests/energy_policy.html" target="_blank">Energy Policy</a></li>
-            <li><a href="./interests/space_exploration.html" target="_blank">Space Exploration</a></li>
+            <li>
+                <a href="./pages/nuclear_engineering.html" target="_blank">
+                    <div class="interest-item">
+                        <img src="./assets/icons/atomic.png" alt="Nuclear Engineering Icon">
+                        <h3>Nuclear Engineering</h3>
+                        <p>Nuclear power is cool!</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./pages/energy_policy.html" target="_blank">
+                    <div class="interest-item">
+                        <img src="./assets/icons/flash.png" alt="Energy Policy Icon">
+                        <h3>Energy Policy</h3>
+                        <p>Nuclear power is good!</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./pages/space_exploration.html" target="_blank">
+                    <div class="interest-item">
+                        <img src="./assets/icons/rocket.png" alt="Space Exploration Icon">
+                        <h3>Space Exploration</h3>
+                        <p>RTGs and Nuclaer Thermal Propulsion!</p>
+                    </div>
+                </a>
+            </li>
         </ul>
     </div>
+    
 </html>
