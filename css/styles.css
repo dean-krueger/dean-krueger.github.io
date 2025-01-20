@@ -1,0 +1,148 @@
+/* Reset default styles for clean layout */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Style for the banner */
+#banner {
+    background-image: url("../assets/images/banner.jpeg");
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    height: 300px; /* Set a height for the banner */
+    width: 100%;
+    position: relative;
+}
+
+/* Header and navigation container */
+#header {
+    background-color: #f8f9fa; /* Light gray background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navigation {
+    display: flex;
+    justify-content: center; /* Center align the nav */
+    padding: 1em 0;
+}
+
+.navigation .menu {
+    display: flex;
+    gap: 2em; /* Spacing between main menu items */
+}
+
+.menu li {
+    position: relative; /* Needed for submenu positioning */
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu li:hover {
+    color: #007bff; /* Change to a blue shade on hover */
+}
+
+/* Submenu styling */
+.menu li .menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position submenu below the parent */
+    left: 0;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 0.5em 0;
+    z-index: 10;
+    min-width: 200px; /* Ensure enough width for submenu items */
+}
+
+.menu li .menu li {
+    padding: 0.5em 1em;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.menu li .menu li:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+    color: #007bff; /* Match hover color */
+}
+
+/* Show submenu on hover */
+.menu-item-expanded:hover .menu {
+    display: block; /* Display submenu */
+}
+
+/* Interests Section Styling */
+#Interests {
+    display: flex;
+    justify-content: center; /* Center the entire row */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional: background for the section */
+}
+
+#Interests ul {
+    list-style: none; /* Remove bullets from the list */
+    display: flex;
+    gap: 30px; /* Space between the items */
+    padding: 0;
+    margin: 0;
+}
+
+#Interests li {
+    text-align: center; /* Center align each item */
+}
+
+#Interests a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Text color */
+}
+
+.interest-item {
+    border: 2px solid #ccc; /* Border for each block */
+    padding: 20px;
+    transition: transform 0.3s, border-color 0.3s; /* Hover effects */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items inside the block */
+    justify-content: space-between; /* Distribute space evenly */
+    width: 250px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    box-sizing: border-box; /* Include padding/borders in the size */
+}
+
+.interest-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    border-color: #003874; /* Change border color on hover */
+}
+
+.interest-item img {
+    width: 80px; /* Adjust icon size */
+    height: 80px;
+    margin-bottom: 10px; /* Space between the icon and text */
+    margin-top: 20px;
+}
+
+.interest-item h3 {
+    font-size: 16px; /* Adjust text size */
+    font-family: Copperplate;
+    color: #003874;
+    margin: 0; /* Remove default margin */
+}
+
+.interest-item p {
+    font-size: 14px; /* Paragraph size */
+    font-family: Cambria;
+    color: rgb(118, 118, 118);
+    text-align: center; /* Center-align the text */
+    margin: 0; /* Remove default margins */
+}
