@@ -3,6 +3,25 @@ body, ul, li {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    font-family: 'Copperplate', sans-serif; /* Use Copperplate for the entire website */
+    color: #333; /* Charcoal gray text color */
+    line-height: 1.6; /* Improve line spacing for readability */
+}
+
+/* Style for the eye-catch section */
+.eye-catch {
+    display: flex; /* Lay out the image and text side by side */
+    align-items: center; /* Vertically align the content */
+    justify-content: center; /* Horizontally center the content */
+    margin: 40px 0; /* Add some margin to give space around this section */
+    padding: 20px;
+}
+
+.eye-catch img {
+    max-width: 200px; /* Set the image size */
+    border-radius: 10px; /* Make the image round */
+    margin-right: 20px; /* Add space between the image and the text */
+    object-fit: cover; /* Ensure the image is cropped to fit within the size */
 }
 
 /* Style for the banner */
@@ -14,6 +33,17 @@ body, ul, li {
     height: 300px; /* Set a height for the banner */
     width: 100%;
     position: relative;
+}
+
+#banner .content h1 {
+    font-family: Copperplate;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border: 2px solid white;
+    padding: 5px; /* Optional: Adds spacing inside the border */
 }
 
 /* Header and navigation container */
@@ -49,7 +79,7 @@ body, ul, li {
 }
 
 .menu li:hover {
-    color: #007bff; /* Change to a blue shade on hover */
+    color: #003874; /* Change to a blue shade on hover */
 }
 
 /* Submenu styling */
@@ -73,7 +103,7 @@ body, ul, li {
 
 .menu li .menu li:hover {
     background-color: #f1f1f1; /* Light gray background on hover */
-    color: #007bff; /* Match hover color */
+    color: #003874; /* Match hover color */
 }
 
 /* Show submenu on hover */
@@ -82,15 +112,16 @@ body, ul, li {
 }
 
 /* Interests Section Styling */
-#Interests {
+#interests {
     display: flex;
+    flex-direction: column;
     justify-content: center; /* Center the entire row */
-    align-items: flex-start; /* Align items to the top */
+    align-items: center; /* Align items to the top */
     padding: 20px;
     background-color: #f9f9f9; /* Optional: background for the section */
 }
 
-#Interests ul {
+#interests ul {
     list-style: none; /* Remove bullets from the list */
     display: flex;
     gap: 30px; /* Space between the items */
@@ -98,13 +129,29 @@ body, ul, li {
     margin: 0;
 }
 
-#Interests li {
+#interests li {
     text-align: center; /* Center align each item */
 }
 
-#Interests a {
+#interests a {
     text-decoration: none; /* Remove underline from links */
     color: black; /* Text color */
+}
+
+.interest-header {
+    text-align: center; /* Center the header text */
+    margin-top: 0px; /* Add space above the header */
+    padding: 0px; /* Add some padding inside the section */
+}
+
+.interest-header h1 {
+    font-family: 'Copperplate', sans-serif; /* Match the font style */
+    font-size: 36px; /* Adjust font size for visibility */
+    color: #333; /* Use a neutral dark gray for text */
+    border-bottom: 2px solid #ccc; /* Add a decorative border above */
+    padding-top: 10px; /* Add space between the border and the text */
+    text-transform: uppercase; /* Make the text uppercase for emphasis */
+    letter-spacing: 2px; /* Add spacing between letters for style */
 }
 
 .interest-item {
@@ -133,7 +180,7 @@ body, ul, li {
 }
 
 .interest-item h3 {
-    font-size: 16px; /* Adjust text size */
+    font-size: 20px; /* Adjust text size */
     font-family: Copperplate;
     color: #003874;
     margin: 0; /* Remove default margin */
@@ -146,3 +193,35 @@ body, ul, li {
     text-align: center; /* Center-align the text */
     margin: 0; /* Remove default margins */
 }
+.image-and-quote {
+    background-image: url("../assets/images/quote-background.jpg"); /* Light background for contrast (optional) */
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    background-position: 25% 75%;
+    position: relative;
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.image-and-quote .text-content {
+    display: flex; /* Create a vertical layout for the quote and attribution */
+    flex-direction: column; /* Stack the quote and attribution vertically */
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.image-and-quote .quote {
+    font-size: 44px; /* Large text for the quote */
+    color: #f1f1f1; /* Gray color for the text */
+    font-style: italic; /* Italicize the quote for emphasis */
+    margin: 0; /* Remove default paragraph margins */
+}
+
+.image-and-quote .quote-attribution {
+    font-size: 14px; /* Slightly smaller font for the attribution */
+    color: #f1f1f1; /* Same gray color as the quote */
+    margin-top: 10px; /* Space between the quote and the attribution */
+    text-align: right; /* Align attribution to the right */
+}
+

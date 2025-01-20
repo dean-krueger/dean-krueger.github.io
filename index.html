@@ -8,11 +8,8 @@
 
 
 <body>
-    <div id="banner">
-      <!--<div class="content">
-            <h1>Dean Krueger</h1>
-        </div>-->
-    </div>
+    <!--Banner and Nav Bar (goes at the top of every page)-->
+    <div id="banner"></div>
     <header id="header">
         <div class="container">
             <nav class="navigation">
@@ -38,12 +35,23 @@
             </nav>
         </div>
     </header>
-    <p>
-        This is a test Paragraph. Write a brief introduction to the website and
-        some stuff like that, idk. This is mostly to see if this will display
-        correctly.
-    </p>
-    <div id="Interests">
+
+    <!--Start of Content for the Page-->
+    <div class="eye-catch">
+        <img src="./assets/images/dean-headshot.jpeg">
+        <div class="eye-catch-content">
+            <p>
+                Hi, my name is Dean! I'm a PhD student in Nuclear Engineering at the University of Wisconsin-Madison. 
+                My research centers on exploring the economic dynamics of nuclear supply chains using CYCLUS, a 
+                dynamic, agent-based nuclear fuel cycle simulator. I'm passionate about combining technical expertise 
+                with innovative modeling to better understand and shape the future of nuclear energy.
+            </p>
+        </div>
+    </div>
+    <div id="interests">
+        <div class="interest-header">
+            <h1>Interests</h1>
+        </div>
         <ul>
             <li>
                 <a href="./pages/nuclear_engineering.html" target="_blank">
@@ -74,5 +82,11 @@
             </li>
         </ul>
     </div>
-    
+
+    <div class="image-and-quote">
+        <div class="text-content">    
+            <p class="quote">"Saving this planet, exploring the rest"</p>
+            <p class="quote-attribution">-Slogan of the UW-Madison Nuclear Engineering and Engineering Physics Department</p>
+        </div>
+    </div>
 </html>
