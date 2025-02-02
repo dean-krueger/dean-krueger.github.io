@@ -9,10 +9,18 @@ body, ul, li {
     line-height: 1.6; /* Improve line spacing for readability */
 }
 
-.main-body {
+html,
+    body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+.main-content {
     height: 100%;
     width: calc(100% * (3 /4));
     margin: auto;
+    flex: 1;
 }
 
 /* Style for the eye-catch section */
@@ -72,7 +80,7 @@ body, ul, li {
 
 .menu li {
     position: relative; /* Needed for submenu positioning */
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -163,7 +171,7 @@ body, ul, li {
 
 .interest-item {
     border: 2px solid #ccc; /* Border for each block */
-    padding: 20px;
+    padding: 25px;
     transition: transform 0.3s, border-color 0.3s; /* Hover effects */
     display: flex;
     flex-direction: column; /* Stack content vertically */
@@ -182,7 +190,7 @@ body, ul, li {
 .interest-item img {
     width: 90px; /* Adjust icon size */
     height: 90px;
-    margin-bottom: 10px; /* Space between the icon and text */
+    margin-bottom: 40px; /* Space between the icon and text */
     margin-top: 50px;
 }
 
